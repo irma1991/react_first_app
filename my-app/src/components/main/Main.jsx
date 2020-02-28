@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Article from "../article/Article";
 import postai from "../../data/postai";
 import Location from "../location/Location";
+import Form from "../form/Form";
 import './main.scss';
 
 class Main extends Component{
@@ -35,6 +36,7 @@ class Main extends Component{
                 <div className = "row">
                     {postData}
                     {postLocation}
+                    <Form/>
                 </div>
             </main>
         )
